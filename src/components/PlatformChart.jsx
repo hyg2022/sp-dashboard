@@ -15,7 +15,7 @@ ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend)
 
 const PlatformChart = () => {
   const data = {
-    labels: ['Twitter/X', 'Instagram', 'Moneywise Blog'],
+    labels: ['Twitter/X', 'Instagram', 'Moneywise Podcast'],
     datasets: [
       {
         label: 'Engagement Rate (%)',

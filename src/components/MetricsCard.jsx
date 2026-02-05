@@ -1,14 +1,14 @@
 import { formatNumber } from '../utils/helpers';
 
 const MetricsCard = ({ stats }) => {
-  const metrics = stats.name === "Moneywise Blog"
+  const metrics = stats.name === "Moneywise Podcast"
     ? [
         { label: "Episodes", value: stats.totalPosts },
-        { label: "Avg Views", value: formatNumber(stats.avgViews) },
-        { label: "Avg Watch", value: stats.avgTimeOnPage },
+        { label: "Avg Downloads", value: formatNumber(stats.avgViews) },
+        { label: "Completion", value: stats.avgTimeOnPage },
       ]
     : [
-        { label: "Posts", value: stats.totalPosts },
+        { label: "Posts", value: formatNumber(stats.totalPosts) },
         { label: "Avg Likes", value: formatNumber(stats.avgLikes) },
         { label: "Followers", value: formatNumber(stats.followersEstimate) },
       ];
@@ -31,7 +31,7 @@ const MetricsCard = ({ stats }) => {
           className="text-xs font-semibold font-body px-2.5 py-1 rounded-full"
           style={{ backgroundColor: stats.color + '15', color: stats.color }}
         >
-          {stats.engagementRate}% eng.
+          {stats.name === "Moneywise Podcast" ? `${stats.engagementRate}/5 rating` : `${stats.engagementRate}% eng.`}
         </span>
       </div>
 

@@ -42,7 +42,7 @@ const EngagementTrend = () => {
         fill: false,
       },
       {
-        label: 'Moneywise Blog',
+        label: 'Moneywise Podcast',
         data: weeklyEngagement.map((w) => w.blog),
         borderColor: chartColors.primary,
         backgroundColor: chartColors.primary + '15',
