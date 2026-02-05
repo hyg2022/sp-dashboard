@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  --color-hampton-primary: #032224;
+  --color-hampton-secondary: #d1bfae;
+  --color-hampton-text: #1e1e1e;
+  --color-hampton-light: #f5f0eb;
+  --color-hampton-accent: #0a4a4e;
+
+  --font-headline: 'Playfair Display', 'Georgia', serif;
+  --font-body: 'Inter', 'Helvetica Neue', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-hampton-text);
+  background-color: #fafaf8;
+  margin: 0;
+}
+
+/* Hide scrollbar for nav */
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-headline);
+}
