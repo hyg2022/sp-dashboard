@@ -6,11 +6,11 @@ const Header = () => (
           Sam Parr Content Dashboard
         </h1>
         <p className="mt-2 text-white/60 font-body text-base md:text-lg">
-          Social Media Coordinator Application &mdash; Content Strategy & Analytics
+          Social Media Remix Opportunities
         </p>
       </div>
       <div className="text-white/40 font-body text-sm">
-        <p>Analyzing Twitter, Instagram & Moneywise</p>
+        <p>Content Strategy & Analytics</p>
         <p className="text-hampton-secondary font-medium">Hampton &middot; Moneywise</p>
       </div>
     </div>
